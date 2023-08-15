@@ -14,10 +14,10 @@ export class RequestsService {
   POST_POST_URL = 'https://alpha-posts-comments.herokuapp.com/create/post'
   POST_COMMENT_URL = 'https://alpha-posts-comments.herokuapp.com/add/comment'*/
 
-  GET_ALL_POSTS_URL = 'http://beta:8081/api/v1/BringAllPosts'
-  GET_POST_BY_ID_URL = 'http://beta:8081/api/v1/BringPost/'
-  POST_POST_URL = 'http://alpha:8080/api/v1/CreatePost'
-  POST_COMMENT_URL = 'http://alpha:8080/api/v1/AddComment'
+  GET_ALL_POSTS_URL = 'http://localhost:8081/api/v1/BringAllPosts'
+  GET_POST_BY_ID_URL = 'http://localhost:8081/api/v1/BringPost/'
+  POST_POST_URL = 'http://localhost:8080/api/v1/CreatePost'
+  POST_COMMENT_URL = 'http://localhost:8080/api/v1/AddComment'
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
