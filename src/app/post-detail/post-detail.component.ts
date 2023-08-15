@@ -52,7 +52,7 @@ export class PostDetailComponent implements OnInit {
     const command:AddCommentCommand = {
       commentId: (Math.random() * (10000000 - 100000) + 100000).toString(),
       postId: this.post?.aggregateId?this.post?.aggregateId:'',
-      author: this.newAuthor,
+      commentAuthor: this.newAuthor,
       content:  this.newContent
     }
 

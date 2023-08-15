@@ -40,7 +40,7 @@ export class PostsPageComponent implements OnInit {
     const newPost:CreatePostCommand = {
       postId: (Math.random() * (10000000 - 100000) + 100000).toString(),
       title: this.newTitle,
-      author: this.newAuthor
+      postAuthor: this.newAuthor
     }
     this.submitPost(newPost);
   }

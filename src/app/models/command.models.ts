@@ -1,12 +1,12 @@
 export type CreatePostCommand = {
   postId:string,
-  author:string,
+  postAuthor:string,
   title:string
 }
 
 export type AddCommentCommand = {
   commentId:string,
   postId:string,
-  author:string,
+  commentAuthor:string,
   content:string
 }
