@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/front-posts-comments",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

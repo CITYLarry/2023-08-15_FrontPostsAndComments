@@ -1,0 +1,20 @@
+<div class="main-space-container">
+  <div class="main-space-form-container">
+    <div class="main-space-inputs-container">
+        <input id="tile" [(ngModel)]="newTitle" placeholder="Title">
+        <input id="author" [(ngModel)]="newAuthor" placeholder="Author">
+    </div>
+    <button (click)="createPost()">Post it!</button>
+  </div> 
+  <div class="posts-container">
+    <div class="single_post_card_container" *ngFor="let post of posts">
+      <div class="single-post-content">
+        <p class="post-title">{{post.title}}</p>
+        <p class="post-author">Athor: {{post.author}}</p>
+      </div>
+
+      <a (click) = "closeSocketConnection()" routerLink="/post/{{post.aggregateId}}">Go inside!</a>
+    </div>
+  </div> 
+
+</div>

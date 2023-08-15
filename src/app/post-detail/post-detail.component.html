@@ -1,0 +1,23 @@
+<div class="post-detail-container">
+  <button class="go-back-button" type="button" (click)="goBack()">go back</button>
+  <div *ngIf="post" class="singlePostContainer">
+    <h2>{{post.title | uppercase}}</h2>
+    <p>Author: {{post.author}}</p>
+    <div class="comments-container">
+      <div *ngFor="let comment of post.comments" class="singleCommentContainer">
+        <p class="comment-content">{{comment.content}}</p>
+        <p class="comment-author">Author: {{comment.author}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="comment-form">
+    <div class="inputs-container">
+      <input id="author" [(ngModel)]="newAuthor" placeholder="Author">
+      <textarea id="content" [(ngModel)]="newContent" placeholder="Content" >
+      </textarea>
+    </div>
+    <button (click)="createComment()">Send!</button>
+  </div>
+</div>
+
+
