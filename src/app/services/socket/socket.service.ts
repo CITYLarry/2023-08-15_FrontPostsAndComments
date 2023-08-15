@@ -10,10 +10,10 @@ export class SocketService {
 
   constructor() { }
   connetToGeneralSpace():WebSocketSubject<PostView>{
-    return webSocket('WS://localhost:8082/retrieve/mainSpace');
+    return webSocket('WS://gama:8082/retrieve/mainSpace');
   }
   connetToSpecificSpace(post:string):WebSocketSubject<CommentView>{
-    return webSocket(`WS://localhost:8082/retrieve/${post}`);
+    return webSocket(`WS://gama:8082/retrieve/${post}`);
   }
 
 }
