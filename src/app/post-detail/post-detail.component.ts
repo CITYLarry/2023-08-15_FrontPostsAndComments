@@ -38,7 +38,6 @@ export class PostDetailComponent implements OnInit {
     this.request.getPostsById(id).subscribe(
       foundPost => {
         this.post = foundPost
-        console.log(this.post);
         this.connectToChannel(this.post?this.post.aggregateId:'mainSpace')
       }
     )

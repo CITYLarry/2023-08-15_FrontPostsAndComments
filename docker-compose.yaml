@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  front:
+    image: angularfront:latest
+    restart: always
+    ports:
+      - '127.0.0.1:4000:80'

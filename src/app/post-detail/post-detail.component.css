@@ -11,13 +11,13 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #595959;
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: #bababa;
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 3px solid #595959;
   }
 
   .post-detail-container{
@@ -27,16 +27,31 @@
   }
 
 .singlePostContainer{
+  color: #595959;
   padding: 1rem;
-  background-color: rgb(164, 220, 220);
+  background-color: #69f0ae;
+  box-shadow: 1px 1px 7px 7px #2b2b2b;
+  border: 1px solid #2b2b2b;
+  border-radius: 8px;
 } 
 
 .go-back-button{
+  color: white;
+  background-color: #7b1fa2;
   padding: 16px;
+  margin: 0.5rem;
+  font-size: 1.2rem;
   width: 15%;
   border-radius: 8px;
   border-style: none;
-  box-shadow: 0px 0px 14px -6px #000000;
+  box-shadow: 1px 1px 7px 7px #2b2b2b;
+  transition: 0.3s;
+}
+
+.go-back-button:hover{
+  color: #7b1fa2;
+  background-color: #303030;
+  box-shadow: 1px 1px 7px 7px #7b1fa2;
 }
 
 .comments-container{
@@ -45,23 +60,25 @@
   display: flex;
   flex-direction: column-reverse;
   padding: 16px;
-  background-color: #ffffff;
+  background-color: #444444;
   border-radius: 8px;
 }
 
 .singleCommentContainer{
-  background-color: #be9f4c;
+  background-color: #7b1fa2;
   padding: 8px;
   border-radius: 8px;
   margin-bottom: 4px;
 }
 .comment-content{
+  color: white;
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 4px;
 }
 
 .comment-author{
+  color: #c0c0c0;
   margin-bottom: 0;
 }
 
@@ -70,22 +87,31 @@
   flex-direction: row;
   align-items: center;
   padding: 1rem;
-  border: 1px solid black;
+  box-shadow: 1px 1rem 7px 7px #2b2b2b;
+  border: 1px solid #2b2b2b;
   border-radius: 8px;
 }
 
 .comment-form button{
+  color: #444444;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: #69f0ae;
   margin: 1rem;
   padding: 16px;
   width: 15%;
   border-radius: 8px;
   border-style: none;
-  box-shadow: 0px 0px 14px -6px #000000;
+  box-shadow: 1px 1px 7px 7px #2b2b2b;
+  transition: 0.3s;
 }
 
 .comment-form button:hover{
+  color: #69f0ae;
+  background-color: #303030;
   transform: scale(1.1);
   cursor: pointer;
+  box-shadow: 1px 1px 7px 7px #69f0ae;
 }
 
 .inputs-container{
@@ -95,16 +121,20 @@
 }
 
 input{
+  color: #c0c0c0;
+  background-color: #444444;
   border-style: none;
   border-radius: 8px;
-  box-shadow: 0px 0px 14px -6px #000000;
+  box-shadow: 1px 1px 7px 7px #2b2b2b;
   height: 32px;
 }
 
 textarea{
+  color: #c0c0c0;
+  background-color: #444444;
   border-style: none;
   border-radius: 8px;
   margin-top: 8px;
-  box-shadow: 0px 0px 14px -6px #000000;
+  box-shadow: 1px 1px 7px 7px #2b2b2b;
   height: 40px;
 }

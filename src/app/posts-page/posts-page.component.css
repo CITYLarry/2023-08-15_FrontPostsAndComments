@@ -11,13 +11,13 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #444444;
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: #bababa;
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 3px solid #444444;
   }
 
 .main-space-container{
@@ -41,25 +41,35 @@
 }
 
 .main-space-inputs-container input{
+  color: #c0c0c0;
+  background-color: #444444;
   border-style: none;
   margin-top: 1rem;
   border-radius: 8px;
-  box-shadow: 0px 0px 14px -6px #000000;
+  box-shadow: 1px 1px 7px 7px #2b2b2b;
   height: 32px;
 }
 
 button{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: #7b1fa2;
   margin-top: 1rem;
   margin-left: 5%;
   width: 15%;
   border-radius: 8px;
   border-style: none;
-  box-shadow: 0px 0px 14px -6px #000000;
+  box-shadow: 1px 1px 7px 7px #2b2b2b;
+  transition: 0.3s;
 }
 
 button:hover{
+  color: #7b1fa2;
+  background-color: #444444;
   transform: scale(1.1);
   cursor: pointer;
+  box-shadow: 1px 1px 7px 7px #7b1fa2;
 }
 
 .posts-container{
@@ -69,24 +79,26 @@ button:hover{
   overflow-y: scroll;  /* for Internet Explorer, Edge */
   scrollbar-width: none; 
   margin-top: 1rem;
-  background-color: rgb(164, 220, 220);
+  background-color: #69f0ae;
+  box-shadow: 1px 1px 7px 7px #2b2b2b;
+  border: 1px solid #2b2b2b;
   border-radius: 8px;
 }
 .single_post_card_container{
-  border: 1px solid black;
+  border: 1px solid #2b2b2b;
   margin: .5rem;
   border-radius: 8px;
   border-style: none;
-  box-shadow: 1px 1px 14px -3px #000000;
+  box-shadow: 1px 1px 14px -3px #303030;
   display: flex;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #444444;
 }
 
 .single_post_card_container a {
   text-decoration: none;
-  color: #ffffff;
-  background-color: rgb(164, 220, 220);
+  color: #c0c0c0;
+  background-color: #7b1fa2;
   padding: 12px;
   margin: 8px;
   font-size: 24px;
@@ -94,7 +106,8 @@ button:hover{
 }
 
 .single_post_card_container a:hover{
-  box-shadow: 3px 3px 10px -3px #000000;
+  color: white;
+  box-shadow: 3px 3px 10px -3px #2b2b2b;
   cursor: pointer;
 }
 
@@ -107,5 +120,9 @@ p{
 }
 
 .post-title{
-  font-size: 32px;
+  font-size: 1.5rem;
+}
+
+.post-author{
+  color: #c0c0c0;
 }
